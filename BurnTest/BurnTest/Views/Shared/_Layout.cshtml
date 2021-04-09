@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    @*<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />*@
+    <title>@ViewData["Title"] - BurnTest</title>
+    @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800'>
+    <link rel='stylesheet' href='https://use.fontawesome.com/73d812ac28.css'>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav">
+
+                <li>@Html.ActionLink("HOME", "Index", new { controller = "Home" }, new { @class = "active" })</li>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <li>@Html.ActionLink("Profile", "MyProfile", "Account")</li>
+
+                    if (User.Identity.Name == "admin@gmail.com")
+                    {
+                        <li>@Html.ActionLink("History", "OrderHistory", "Manage")</li>
+
+                    }
+                }
+                else
+                {
+                    <li>@Html.ActionLink("Sign Up", "SignUp", "Registration")</li>
+                    <li>@Html.ActionLink("Log in", "Login", "Registration")</li>
+                }
+
+
+                @*<li id="perf"><a href="#performances">Performances</a></li>
+                <li id="about"><a href="#aboutus">About Us</a></li>
+                <li id="Prices"><a href="#Prices_section">Prices</a></li>
+                <li id="contact"><a href="#sectioncontact">Contact</a></li>*@
+
+            </ul>
+        </nav>
+    </header>
+
+    @*<header>
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+                <div class="container">
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">BurnTest</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>*@
+    @*<div class="container">
+        <main role="main" class="pb-3">*@
+    @RenderBody()
+    @*</main>
+        </div>*@
+
+    <footer class="flex-rw">
+
+
+        <ul class="footer-list-top">
+            <li>
+                <h4 class="footer-list-header">Wild circus against COVID-19</h4>
+            </li>
+            <li><a href="https://covid19responsefund.org/" target="_blank" class="generic-anchor footer-list-anchor">Wild Circus is committed to helping research against <br>COVID-19, by donating 15% of all its 2020 benefits <br>to World Health Organization</a></li>
+        </ul>
+
+        <ul class="footer-list-top">
+            <li>
+                <h4 class="footer-list-header">Wild Circus challenge</h4>
+            </li>
+            <li><a href='http://www.france-ioi.org/user/perso.php?sLogin=suns' target="_blank" class="generic-anchor footer-list-anchor">FRANCE.IOI</a></li>
+
+            <li><a href='https://www.sololearn.com/Profile/17753695' target="_blank" class="generic-anchor footer-list-anchor">SoLoLearn</a></li>
+            <li><a href='https://wildcodeschool.fr' target="_blank" class="generic-anchor footer-list-anchor">WILD CODE SCHOOL</a></li>
+        </ul>
+
+        <ul class="footer-list-top">
+            <li>
+                <h4 class="footer-list-header">How can we Help you?</h4>
+            </li>
+            <li><a href="mailto:wild.circus@gmail.com" class="generic-anchor footer-list-anchor">Contact Us</a></li>
+            <li><a class="generic-anchor footer-list-anchor">tel: (+41) 96 18 43 60</a></li>
+            <li><a class="generic-anchor footer-list-anchor">Fax: (+41) 96 25 54 15</a></li>
+        </ul>
+
+        <div class="footer-social-section flex-rw">
+            <span class="footer-social-overlap footer-social-connect">
+                Follow
+                <span class="footer-social-small">us</span>
+                with
+            </span>
+            <span class="footer-social-overlap footer-social-icons-wrapper">
+                <a href="https://www.pinterest.fr/good_kid_/wild_circus/" class="generic-anchor" target="_blank" title="Pinterest"><i class="fa fa-pinterest"></i></a>
+                <a href="https://www.facebook.com/Wild-Circus-360522814570063/" class="generic-anchor" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/WILD__CIRCUS" class="generic-anchor" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.youtube.com/watch?v=MFAqFOUZIzU" class="generic-anchor" target="_blank" title="Youtube"><i class="fa fa-youtube"></i></a>
+                <a href="https://www.montecarlofestival.mc/" class="generic-anchor" target="_blank" title="Google Plus"><i class="fa fa-google-plus"></i></a>
+            </span>
+        </div>
+
+        <div class="footer-bottom-section flex-rw">
+            <div class="footer-bottom-wrapper">
+                <p>2020 Wild Cirus Challenge by Loïc " Suns " Augustin</p>
+            </div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,43 @@
+﻿@model BurnTest.ViewModels.RegisterViewModels
+@{
+    ViewData["Title"] = "SignUp";
+}
+
+<div class="container">
+    <main role="main" class="pb-6">
+        <h1>SignUp</h1>
+        <form method="post" asp-controller="Registration" asp-action="SignUp">
+            <div class="wrapper">
+                <div class="title">
+                    Registration Form
+                </div>
+                <div class="form">
+                    <div asp-validation-summary="ModelOnly"></div>
+                    <div class="inputfield">
+                        <label asp-for="Name"></label><br />
+                        <input asp-for="Name" class="input" />
+                        <span asp-validation-for="Name"></span>
+                    </div>
+                    <div class="inputfield">
+                        <label asp-for="Email"></label><br />
+                        <input asp-for="Email" class="input" />
+                        <span asp-validation-for="Email"></span>
+                    </div>
+                    <div class="inputfield">
+                        <label asp-for="Password"></label><br />
+                        <input asp-for="Password" class="input" />
+                        <span asp-validation-for="Password"></span>
+                    </div>
+                    <div class="inputfield">
+                        <label asp-for="PasswordConfirm"></label><br />
+                        <input asp-for="PasswordConfirm" class="input" />
+                        <span asp-validation-for="PasswordConfirm"></span>
+                    </div>
+                    <div class="inputfield">
+                        <input type="submit" value="Register" class="btn amber darken-2">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+</div>
