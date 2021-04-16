@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Dev\\BurnTest\\BurnTest\\BurnTest.csproj": {}
+    "D:\\Dev\\Burning-Man-DiplomaProject-v2\\BurnTest\\BurnTest\\BurnTest.csproj": {}
   },
   "projects": {
-    "D:\\Dev\\BurnTest\\BurnTest\\BurnTest.csproj": {
+    "D:\\Dev\\Burning-Man-DiplomaProject-v2\\BurnTest\\BurnTest\\BurnTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dev\\BurnTest\\BurnTest\\BurnTest.csproj",
+        "projectUniqueName": "D:\\Dev\\Burning-Man-DiplomaProject-v2\\BurnTest\\BurnTest\\BurnTest.csproj",
         "projectName": "BurnTest",
-        "projectPath": "D:\\Dev\\BurnTest\\BurnTest\\BurnTest.csproj",
+        "projectPath": "D:\\Dev\\Burning-Man-DiplomaProject-v2\\BurnTest\\BurnTest\\BurnTest.csproj",
         "packagesPath": "C:\\Users\\nordi\\.nuget\\packages\\",
-        "outputPath": "D:\\Dev\\BurnTest\\BurnTest\\obj\\",
+        "outputPath": "D:\\Dev\\Burning-Man-DiplomaProject-v2\\BurnTest\\BurnTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -63,6 +63,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.5, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.5, )"
             }
           },
           "imports": [

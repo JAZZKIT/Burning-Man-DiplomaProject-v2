@@ -5,22 +5,19 @@
 
 <div class="container">
     <main role="main" class="pb-6">
-        <h1>Log in</h1>
-        <form method="post" asp-controller="Registration" asp-action="Login"
-              asp-route-returnUrl="@Model.ReturnUrl">
+        <h1 style="text-align: center;">Log in</h1>
+        <form class="formSigLog" method="post" asp-controller="Registration" asp-action="Login"
+              asp-route-returnUrl="@Model.ReturnUrl" style="text-align: center;max-width: 10000px;">
             <div class="wrapper">
-                <div class="title">
-                    Log
-                </div>
                 <div asp-validation-summary="ModelOnly"></div>
                 <div class="inputfield">
                     <label asp-for="Email"></label><br />
-                    <input asp-for="Email" class="input" />
+                    <input asp-for="Email" class="input" style="text-align: center;" />
                     <span asp-validation-for="Email"></span>
                 </div>
                 <div class="inputfield">
                     <label asp-for="Password"></label><br />
-                    <input asp-for="Password" class="input" />
+                    <input asp-for="Password" class="input" style="text-align: center;" />
                     <span asp-validation-for="Password"></span>
                 </div>
                 @*<div>

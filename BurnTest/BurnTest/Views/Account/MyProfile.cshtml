@@ -44,11 +44,12 @@
             } 
         }
 
+    
+
+
+<form class="btn btn-sm btn-primary" method="post" asp-controller="Registration" asp-action="Logout">
     <a class="btn btn-sm btn-primary" asp-action="ChangePassword" asp-route-id="@User.Identity.GetUserId()">Change Password</a>
-
-
-    <form class="btn btn-sm btn-primary" method="post" asp-controller="Registration" asp-action="Logout">
-        <input type="submit" value="Exit" />
-    </form>
+    <input type="submit" value="Exit" />
+</form>
 </div>
 
