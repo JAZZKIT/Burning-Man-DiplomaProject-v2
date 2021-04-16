@@ -270,3 +270,4 @@ D:\Dev\Burning-Man-DiplomaProject-v2\BurnTest\BurnTest\obj\Debug\netcoreapp3.1\B
 D:\Dev\Burning-Man-DiplomaProject-v2\BurnTest\BurnTest\obj\Debug\netcoreapp3.1\BurnTest.genruntimeconfig.cache
 D:\Dev\Burning-Man-DiplomaProject-v2\BurnTest\BurnTest\obj\Debug\netcoreapp3.1\Razor\Views\Manage\OrderHistory.cshtml.g.cs
 D:\Dev\Burning-Man-DiplomaProject-v2\BurnTest\BurnTest\obj\Debug\netcoreapp3.1\Razor\Views\TicketManage\TicketMainPage.cshtml.g.cs
+D:\Dev\Burning-Man-DiplomaProject-v2\BurnTest\BurnTest\obj\Debug\netcoreapp3.1\Razor\Views\TicketManage\TicketPreBuyPage.cshtml.g.cs

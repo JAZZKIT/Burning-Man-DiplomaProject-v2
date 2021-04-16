@@ -9,6 +9,7 @@ namespace BurnTest.Models
     {
         public int Id { get; set; }
         public decimal Amount { get; set; }
+        public string Mail { get; set; }
         public DateTime OrderDateTime { get; set; }
         public int Quantity { get; set; }
 

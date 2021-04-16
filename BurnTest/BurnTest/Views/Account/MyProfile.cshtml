@@ -3,8 +3,9 @@
 @model List<BurnTest.Models.User>
 @{ ViewData["Title"] = "MyProfile"; }
 
+<link rel="stylesheet" href="~/css/site.css" />
 <div class="container">
-    <h1>MyProfile</h1>
+    <h1 style="text-align: center;">My Profile</h1>
 
     <p>@User.Identity.GetUserId()</p>
 
@@ -45,11 +46,12 @@
         }
 
     
+    
 
-
-<form class="btn btn-sm btn-primary" method="post" asp-controller="Registration" asp-action="Logout">
-    <a class="btn btn-sm btn-primary" asp-action="ChangePassword" asp-route-id="@User.Identity.GetUserId()">Change Password</a>
-    <input type="submit" value="Exit" />
-</form>
+    <form class="" method="post" asp-controller="Registration" asp-action="Logout">
+        <a class="btn btn-sm btn-primary" asp-action="ChangePassword" asp-route-id="@User.Identity.GetUserId()">Change Password</a>
+        <input class="btn btn-sm btn-primary" type="submit" value="Exit"/>
+    </form>
+    
 </div>
 

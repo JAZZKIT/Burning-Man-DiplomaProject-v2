@@ -10,7 +10,6 @@ namespace BurnTest.Controllers
     {
         private IRepository<Order> db;
 
-
         public ManageController(ApplicationContext context)
         {
             db = new OrderRepository(context);

@@ -13,6 +13,11 @@ namespace BurnTest.Controllers
         private string GetCurrentUserIdAsync() => _userManager.GetUserId(HttpContext.User);
         private IRepository<Order> db;
 
+        public IActionResult TicketPreBuyPage()
+        {
+            return View();
+        }
+        
         public IActionResult TicketMainPage()
         {
             return View();
@@ -33,6 +38,7 @@ namespace BurnTest.Controllers
                 Quantity = Convert.ToInt32(qt),
                 Amount = Convert.ToDecimal(price),
                 OrderDateTime = DateTime.Now,
+                Mail = User.Identity.Name,
                 TicketId = 1,
                 UserId = GetCurrentUserIdAsync()
             };

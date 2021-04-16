@@ -115,92 +115,56 @@
             </div>
         </section>
 
-        <section id="Prices_section">
-            <h2 class="title_price"><strong>Prices</strong></h2>
-            <table class="content-table">
-                <thead>
-                    <tr>
-                        <th>Period</th>
-                        <th>Weeks except Wednesday</th>
-                        <th>Ticket Office</th>
-                        <th>Weekend and Wednesday</th>
-                        <th>Ticket Office</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Childrens <i>(under 12)</i></td>
-                        <td>10$</td>
-                        <td><a href="https://codepen.io/Sunsworldz/full/NWqJMBJ" target="_blank" class="button-ticket">Buy ticket</a></td>
-                        <td>12$</td>
-                        <td><a href="https://codepen.io/Sunsworldz/full/NWqJzLN" target="_blank" class="button-ticket">Buy ticket</a></td>
-                    </tr>
-                    <tr class="active-row">
-                        <td>Adults<i> (over 12)</i></td>
-                        <td>15$</td>
-                        <td><a href="https://codepen.io/Sunsworldz/full/NWqJMBJ" target="_blank" class="button-ticket">Buy ticket</a></td>
-                        <td>18$</td>
-                        <td><a href="https://codepen.io/Sunsworldz/full/NWqJzLN" target="_blank" class="button-ticket">Buy ticket</a></td>
-                    </tr>
-                    <tr>
-                        <td>Groups** <i>(more 10 people)</i></td>
-                        <td>10$</td>
-                        <td><a href="https://codepen.io/Sunsworldz/full/NWqJMBJ" target="_blank" class="button-ticket">Buy ticket</a></td>
-                        <td>12$*</td>
-                        <td><a href="https://codepen.io/Sunsworldz/full/NWqJzLN" target="_blank" class="button-ticket">Buy ticket</a></td>
-                    </tr>
-                    <tr class="active-row">
-                        <td>Schools</td>
-                        <td>200$*</td>
-                        <td><a href="https://codepen.io/Sunsworldz/full/NWqJMBJ" target="_blank" class="button-ticket">Buy ticket</a></td>
-                        <td>250$*</td>
-                        <td><a href="https://codepen.io/Sunsworldz/full/NWqJzLN" target="_blank" class="button-ticket">Buy ticket</a></td>
-                    </tr>
-                </tbody>
+    <section id="sectioncontact">
+        <div id="abc">
+            <div id="popupContact">
+                <form action="#" id="form" method="post" name="form">
+                    <i class="icon-remove" onclick="div_hide()"></i>
+                    <h6 id=title_contact><strong>Contact us</strong></h6>
+                    <div class="input-container">
+                        <p class="input-field "><label for="subject"><strong>Name</strong></label></p>
+                        <input type="text" id="subject" name="usrnm">
+                    </div>
+                    <div class="input-container">
+                        <p class="input-field"><label for="subject"><strong>Email</strong></label></p>
+                        <input type="text" name="email">
+                    </div>
 
-            </table>
-            <p class="legend_price">* Only by reservation, please contact us by phone or by online form.<br>** We offer a declining rate beyond 20 people, contact us.</p>
+                    <div class="input-container">
+                        <p class="inputfield"><label for="message"><strong>Your Message</strong></label></p>
+                        <textarea id="message" rows="10" cols="47" name="message"></textarea>
+                    </div>
 
-        </section>
+                    <div class="sub-button"><a href="https://codepen.io/Sunsworldz/full/MWwXgEK">Submit</a></div>
 
-        <section id="sectioncontact">
-            <div id="abc">
-                <div id="popupContact">
-                    <form action="#" id="form" method="post" name="form">
-                        <i class="icon-remove" onclick="div_hide()"></i>
-                        <h6 id=title_contact><strong>Contact us</strong></h6>
-                        <div class="input-container">
-                            <p class="input-field "><label for="subject"><strong>Name</strong></label></p>
-                            <input type="text" id="subject" name="usrnm" placeholder="First, last name">
-                        </div>
-                        <div class="input-container">
-                            <p class="input-field"><label for="subject"><strong>Email</strong></label></p>
-                            <input type="text" name="email" placeholder="youremail@gmail.com">
-                        </div>
-
-                        <div class="input-container">
-                            <p class="inputfield"><label for="message"><strong>Your Message</strong></label></p>
-                            <textarea id="message" rows="10" cols="47" name="message"></textarea>
-                        </div>
-
-                        <div class="sub-button"><a href="https://codepen.io/Sunsworldz/full/MWwXgEK">Submit</a></div>
-
-                    </form>
-                </div>
-
+                </form>
             </div>
 
-            @if (User.Identity.IsAuthenticated)
-            {
-                @Html.ActionLink("Tickets!", "TicketMainPage", new { controller = "TicketManage" }, new { @class = "mattpennell button" })
-            }
+        </div>
 
-            <div class="sectioncontact">
-                <a onclick="div_show()"><img src="https://i.ibb.co/z87dXbS/Fichier-1.png" alt="Bouton_contact"></a>
+        <div class="sectioncontact">
+            <a onclick="div_show()"><img src="https://i.ibb.co/z87dXbS/Fichier-1.png" alt="Bouton_contact"></a>
+        </div>
+    </section>
+    
+    <div class="wrapper">
+        <div class="product-img">
+          <img src="http://www.ijamming.net/wp-content/img_2860.jpg" height="420" width="327">
+        </div>
+        <div class="product-info">
+          <div class="product-text">
+            <h1>Harvest Vase</h1>
+            <h2>by studio and friends</h2>
+            <p>Harvest Vases are a reinterpretation<br> of peeled fruits and vegetables as<br> functional objects. The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
+          </div>
+            <div class="product-price-btn">
+                @if (User.Identity.IsAuthenticated)
+                {
+                    @Html.ActionLink("Tickets!", "TicketPreBuyPage", new {controller = "TicketManage"}, new {@target = "_blank", @class = "button-ticket", @style = "margin-left: 85%"})
+                }
             </div>
-        </section>
-
-
+        </div>
+      </div>
     </body>
 
 </html>
@@ -208,3 +172,8 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js'></script>
 <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
 <script src="./script.js"></script>
+
+
+  
+
+
