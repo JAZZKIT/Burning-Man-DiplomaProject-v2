@@ -161,6 +161,7 @@
                 @if (User.Identity.IsAuthenticated)
                 {
                     @Html.ActionLink("Tickets!", "TicketPreBuyPage", new {controller = "TicketManage"}, new {@target = "_blank", @class = "button-ticket", @style = "margin-left: 85%"})
+                    @Html.ActionLink("Card!", "TicketSellPage", new {controller = "TicketManage"}, new {@target = "_blank", @class = "button-ticket", @style = "margin-left: 85%"})
                 }
             </div>
         </div>
