@@ -162,15 +162,15 @@ html #performances ul li {
 }
 
 #laugh {
-    background-image: url("https://i.ibb.co/GvQ8mXD/test1.png");
+    background-image: url("https://i.pinimg.com/originals/81/56/c7/8156c7292d16bedc134fdf6b90fcfc8c.jpg");
 }
 
 #dream {
-    background-image: url("https://i.ibb.co/dMp6vSX/test2.png");
+    background-image: url("https://i.pinimg.com/originals/ef/c2/4d/efc24de73e9e7fd1a937fc71aca9c68c.jpg");
 }
 
 #marvel_at {
-    background-image: url("https://i.ibb.co/K0nnwJG/nintchdbpict000296806584.jpg");
+    background-image: url("https://euphoric-threads.com/wp-content/uploads/2019/08/IMG_0506-1024x768.jpeg");
 }
 
 :root {
@@ -348,27 +348,28 @@ html #performances ul li {
     }
 
     .timeline #swiper-id1 {
-        background-image: url("https://i.ibb.co/G0v1TnD/Sans-titre2.png?     width=560&fit=crop&quality=75&auto=webp");
+        /*background-image: url("https://i.ibb.co/G0v1TnD/Sans-titre2.png?     width=560&fit=crop&quality=75&auto=webp");*/
+        background-image: url("https://i.huffpost.com/gen/1304331/thumbs/o-ARRIVAL-900.jpg?1");
     }
 
     .timeline #swiper-id2 {
-        background-image: url("https://i.ibb.co/r38Y2HY/kovacs.png");
+        background-image: url("https://i.redd.it/6d1fp3nweze41.jpg");
     }
 
     .timeline #swiper-id3 {
-        background-image: url("https://i.ibb.co/wdq4pxJ/three-ring-circus.jpg");
+        background-image: url("https://image.isu.pub/100531082451-1f359d02d4da4751adf913f80faebc2a/jpg/page_1.jpg");
     }
 
     .timeline #swiper-id4 {
-        background-image: url("https://i.ibb.co/tcLCxjs/love-the-beatles-cirque-du-soleil-4-1.jpg");
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Dust_storm_in_Black_Rocks_Desert_nn.jpg/1280px-Dust_storm_in_Black_Rocks_Desert_nn.jpg");
     }
 
     .timeline #swiper-id5 {
-        background-image: url("https://i.ibb.co/CKzxnx5/350-r145davidshipmancast-w-1024x682.jpg");
+        background-image: url("https://static.dezeen.com/uploads/2018/08/the-orb-bjarke-ingles-jakob-lange-burning-man-2018-highlights_dezeen-hero-a.jpg");
     }
 
     .timeline #swiper-id6 {
-        background-image: url("https://i.ibb.co/dfX20WG/Sans-titre.png");
+        background-image: url("http://www.stripesandstars.nl/wp-content/uploads/2017/03/Burning-Man-USA-Welcome-Home1.jpg");
     }
 
     .timeline .swiper-slide {
