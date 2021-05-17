@@ -153,22 +153,25 @@
     
     <div class="wrapper">
         <div class="product-img">
-          <img src="http://www.ijamming.net/wp-content/img_2860.jpg" height="420" width="327">
+            <img src="http://www.ijamming.net/wp-content/img_2860.jpg" height="420" width="327">
         </div>
         <div class="product-info">
-          <div class="product-text">
-            <h1>Harvest Vase</h1>
-            <h2>by studio and friends</h2>
-            <p>Harvest Vases are a reinterpretation<br> of peeled fruits and vegetables as<br> functional objects. The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
-          </div>
+            <div class="product-text">
+                <h1>Harvest Vase</h1>
+                <h2>by studio and friends</h2>
+                <p>Harvest Vases are a reinterpretation<br> of peeled fruits and vegetables as<br> functional objects. The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
+            </div>
             <div class="product-price-btn">
                 @if (User.Identity.IsAuthenticated)
                 {
                     @Html.ActionLink("Tickets!", "TicketPreBuyPage", new {controller = "TicketManage"}, new {@target = "_blank", @class = "button-ticket", @style = "margin-left: 85%"})
-                    @Html.ActionLink("Card!", "TicketSellPage", new {controller = "TicketManage"}, new {@target = "_blank", @class = "button-ticket", @style = "margin-left: 85%"})
                 }
             </div>
-            
+        </div>
+    </div>
+    <div class="container">
+        <img src="/img/RV.png" alt="Italian Trulli" style="height: 500px; width: 500px; display: block;margin-left: auto;margin-right: auto">
+    </div>
             
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-dark btn-sm" data-toggle="modal" data-target="#exampleModalCenter">
@@ -184,9 +187,9 @@
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
-                  <div class="modal-body">
-                    <div id="BukzaContainer15349"></div>
-                      <script type='text/javascript'>
+                    <div class="modal-body">
+                        <div id="BukzaContainer15349"></div>
+                        <script type='text/javascript'>
                                                  (function(){
                                                      var d = document;
                                                      var w = window;
@@ -205,15 +208,13 @@
                                                      }
                                                  })();
                     </script>
-                  </div>
+                    </div>
+                    
                 </div>
               </div>
             </div>
-            
-            
-            
-        </div>
-      </div>
+    
+      
     </body>
 
 </html>

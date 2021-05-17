@@ -9220,7 +9220,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jazzk\\.nuget\\packages\\": {},
+    "C:\\Users\\nordi\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
@@ -9229,14 +9229,14 @@
       "projectUniqueName": "D:\\Dev\\Burning-Man-DiplomaProject-v2\\BurnTest\\BurnTest\\BurnTest.csproj",
       "projectName": "BurnTest",
       "projectPath": "D:\\Dev\\Burning-Man-DiplomaProject-v2\\BurnTest\\BurnTest\\BurnTest.csproj",
-      "packagesPath": "C:\\Users\\jazzk\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\nordi\\.nuget\\packages\\",
       "outputPath": "D:\\Dev\\Burning-Man-DiplomaProject-v2\\BurnTest\\BurnTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\jazzk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nordi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
