@@ -3,15 +3,15 @@
 @model List<BurnTest.Models.User>
 @{ ViewData["Title"] = "MyProfile"; }
 
-<link rel="stylesheet" href="~/css/site.css" />
+<link rel="stylesheet" href="~/css/site.css"/>
 <div class="container">
     <h1 style="text-align: center;">My Profile</h1>
 
     <p>@User.Identity.GetUserId()</p>
 
 
-
-    @{ foreach (var item in (IEnumerable<BurnTest.Models.User>)TempData["ProUser"])
+    @{
+        foreach (var item in (IEnumerable<BurnTest.Models.User>) TempData["ProUser"])
         {
             if (item.Id == User.Identity.GetUserId())
             {
@@ -29,7 +29,6 @@
                         </div>
                     </li>
 
-
                     <li class="collection-item">
                         <div class="row">
                             <div class="col s6">
@@ -40,18 +39,26 @@
                             </div>
                         </div>
                     </li>
-                </ul> 
-                }
-            } 
-        }
 
-    
-    
+                    <li class="collection-item">
+                        <div class="row">
+                            <div class="col s6">
+                                <h6>Deployment</h6>
+                            </div>
+                            <div class="col s6">
+                                August 29, at 00:00am, 2021 Black Rock City
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            }
+        }
+    }
+
 
     <form class="" method="post" asp-controller="Registration" asp-action="Logout">
         <a class="btn btn-sm btn-primary" asp-action="ChangePassword" asp-route-id="@User.Identity.GetUserId()">Change Password</a>
         <input class="btn btn-sm btn-primary" type="submit" value="Exit"/>
     </form>
-    
-</div>
 
+</div>
